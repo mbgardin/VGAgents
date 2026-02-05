@@ -1,0 +1,120 @@
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - ========== Running DOOM ==========
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Experiment will be saved in: ./dumped/default/yprn4odqvy
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - scenario: deathmatch
+                                             map_ids_train: [1]
+                                             map_ids_test: [1]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 
+                                             game_features: 
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 4
+                                             frame_skip: 4
+                                             action_combinations: move_fb+turn_lr+move_lr+attack
+                                             freelook: False
+                                             speed: off
+                                             crouch: off
+                                             manual_control: False
+                                             players_per_game: 1
+                                             player_rank: 0
+                                             dump_path: ./dumped/default/yprn4odqvy
+                                             visualize: False
+                                             evaluate: 0
+                                             human_player: False
+                                             reload: 
+                                             dump_freq: 1000
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_ff
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: 
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [1, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.0
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: full_deathmatch
+                                             n_bots: 8
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 0
+                                             n_fm: 3
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - 7 available actions:
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_BACKWARD']
+                                             ['TURN_LEFT']
+                                             ['TURN_RIGHT']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_RIGHT']
+                                             ['ATTACK']
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Reward values:
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Input shape: (3, 60, 108)
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Conv layer output dim : 4608
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Hidden layer input dim: 4672
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Starting experiment...
+INFO [87085] - 02/05/26 14:56:19 - 0:00:00 - Training on map 1 ...
+INFO [87085] - 02/05/26 14:56:26 - 0:00:07 - === Iteration 400
+INFO [87085] - 02/05/26 14:56:26 - 0:00:07 - DQN loss: 0.15801
+INFO [87085] - 02/05/26 14:56:33 - 0:00:14 - === Iteration 800
+INFO [87085] - 02/05/26 14:56:33 - 0:00:14 - DQN loss: 0.15734
+INFO [87085] - 02/05/26 14:56:36 - 0:00:18 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-1000.pth
+INFO [87085] - 02/05/26 14:56:40 - 0:00:21 - === Iteration 1200
+INFO [87085] - 02/05/26 14:56:40 - 0:00:21 - DQN loss: 0.18155
+INFO [87085] - 02/05/26 14:56:47 - 0:00:28 - === Iteration 1600
+INFO [87085] - 02/05/26 14:56:47 - 0:00:28 - DQN loss: 0.17046
+INFO [87085] - 02/05/26 14:56:54 - 0:00:35 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-2000.pth
+INFO [87085] - 02/05/26 14:56:54 - 0:00:35 - === Iteration 2000
+INFO [87085] - 02/05/26 14:56:54 - 0:00:35 - DQN loss: 0.16949
+INFO [87085] - 02/05/26 14:57:01 - 0:00:42 - === Iteration 2400
+INFO [87085] - 02/05/26 14:57:01 - 0:00:42 - DQN loss: 0.20278
+INFO [87085] - 02/05/26 14:57:08 - 0:00:49 - === Iteration 2800
+INFO [87085] - 02/05/26 14:57:08 - 0:00:49 - DQN loss: 0.16229
+INFO [87085] - 02/05/26 14:57:11 - 0:00:53 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-3000.pth
+INFO [87085] - 02/05/26 14:57:15 - 0:00:56 - === Iteration 3200
+INFO [87085] - 02/05/26 14:57:15 - 0:00:56 - DQN loss: 0.14600
+INFO [87085] - 02/05/26 14:57:22 - 0:01:03 - === Iteration 3600
+INFO [87085] - 02/05/26 14:57:22 - 0:01:03 - DQN loss: 0.18125
+INFO [87085] - 02/05/26 14:57:29 - 0:01:10 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-4000.pth
+INFO [87085] - 02/05/26 14:57:29 - 0:01:10 - === Iteration 4000
+INFO [87085] - 02/05/26 14:57:29 - 0:01:10 - DQN loss: 0.14297
+INFO [87085] - 02/05/26 14:57:36 - 0:01:17 - === Iteration 4400
+INFO [87085] - 02/05/26 14:57:36 - 0:01:17 - DQN loss: 0.14867
+INFO [87085] - 02/05/26 14:57:43 - 0:01:24 - === Iteration 4800
+INFO [87085] - 02/05/26 14:57:43 - 0:01:24 - DQN loss: 0.11823
+INFO [87085] - 02/05/26 14:57:46 - 0:01:28 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-5000.pth
+INFO [87085] - 02/05/26 14:57:50 - 0:01:31 - === Iteration 5200
+INFO [87085] - 02/05/26 14:57:50 - 0:01:31 - DQN loss: 0.16961
+INFO [87085] - 02/05/26 14:57:57 - 0:01:38 - === Iteration 5600
+INFO [87085] - 02/05/26 14:57:57 - 0:01:38 - DQN loss: 0.11833
+INFO [87085] - 02/05/26 14:58:04 - 0:01:45 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-6000.pth
+INFO [87085] - 02/05/26 14:58:04 - 0:01:45 - === Iteration 6000
+INFO [87085] - 02/05/26 14:58:04 - 0:01:45 - DQN loss: 0.13260
+INFO [87085] - 02/05/26 14:58:11 - 0:01:52 - === Iteration 6400
+INFO [87085] - 02/05/26 14:58:11 - 0:01:52 - DQN loss: 0.14313
+INFO [87085] - 02/05/26 14:58:18 - 0:02:00 - === Iteration 6800
+INFO [87085] - 02/05/26 14:58:18 - 0:02:00 - DQN loss: 0.15675
+INFO [87085] - 02/05/26 14:58:22 - 0:02:04 - Periodic dump: ./dumped/default/yprn4odqvy/periodic-7000.pth
